@@ -1,0 +1,150 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  /* width: 20px; */
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.header {
+  padding: 10px 20px;
+  background-color: rgb(192, 192, 192);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn button:hover {
+  padding: 5px 25px;
+}
+
+/* .header-btn div {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 20px;
+  cursor: pointer;
+} */
+
+.header-btn button img {
+  width: 20px;
+  height: 20px;
+}
+.search {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.search:hover input {
+  padding-left: 20px;
+}
+.search img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.search input {
+  border: none;
+  transition: all ease-in-out 0.3s;
+}
+/* .search input:hover{
+  padding-left: 10px;
+} */
+.search input:focus {
+  outline: none;
+  border: none;
+}
+
+/* main*/
+.main {
+  display: flex;
+}
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+   scrollbar-width: thin; 
+  scrollbar-color: #c7c7c7 #f2f2f2;
+}
+/* Стилізація вертикальної прокрутки */
+.sidebar::-webkit-scrollbar {
+  width: 2px; /* ширина вертикальної прокрутки */
+  border-radius: 20px;
+}
+
+/* Стилізація курсору прокрутки */
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888; /* колір курсору */
+  border-radius: 10px; /* закруглені кути курсору */
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-li {
+  padding: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  border-bottom: 1px solid #eeeeee;
+}
+.sidebar-li:hover {
+  background-color: rgb(216, 216, 216);
+}
+.active {
+  background-color: rgb(206, 206, 206);
+}
+
+.span-date {
+  font-size: 10px;
+}
+p {
+  width: 150px; /* Фіксована ширина */
+  max-height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+#input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+#input:focus {
+  outline: none;
+  border: none;
+}
+.task {
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}

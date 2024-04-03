@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>App Todo Js</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-btn">
+        <button class="buttonAdd"><img src="./img/add.png" alt="Add" /></button>
+        <button class="buttonRemoveItem"><img src="./img/delete.png" alt="Delete" /></button>
+        <button class="buttonEdit"><img src="./img/edit.png" alt="Edit" /></button>
+        <button class="buttonRemove"><p>delete All</p></button>
+      </div>
+      <div class="search">
+        <img src="./img/search.png" alt="Search" />
+        <input id="search" type="text" placeholder="filter by tasks" />
+      </div>
+    </header>
+    <main class="main">
+      <div class="sidebar">
+        <ul class="sidebar-ul"></ul>
+      </div>
+      <div class="task">
+        <span class="date"></span>
+        <input id="input" type="text" placeholder="write your task" />
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
